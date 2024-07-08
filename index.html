@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Dias Úteis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+        .month-result {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Dias Úteis por Mês</h1>
+    <label for="year">Escolha um ano: </label>
+    <input type="number" id="year" min="1900" max="2100" value="2024">
+    <button onclick="calculateWeekdays()">Calcular</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
